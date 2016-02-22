@@ -112,6 +112,8 @@ def read_limited_ntuple(ntuple_path, header_path):
         ('Direction Cosine X', 'f'),
         ('Direction Cosine Y', 'f'),
         ('Weight', 'f'),
+        ('Track ID','i'),                                                                              
+        ('Parent ID', 'i')
     ]
 
     return np.fromfile(ntuple_path, dtype=np.dtype(col_types))
